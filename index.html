@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="jsmode">바뀌기 전 text</button>
+    <script>
+      const mode = document.getElementById("jsmode");
+      mode.addEventListener("click", function () {
+        if (mode.innerHTML === "바뀌기 전 text") {
+          mode.innerHTML = "바뀐 text!";
+        } else {
+          mode.innerHTML = "바뀌기 전 text";
+        }
+      });
+    </script>
+  </body>
+</html>
